@@ -1,0 +1,6 @@
+*.bak
+*.swp
+.idea/
+/src/object_model/*.cc
+/src/object_model/*.h
+/src/ifun_test_object.*
