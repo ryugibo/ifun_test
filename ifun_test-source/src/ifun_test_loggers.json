@@ -9,7 +9,36 @@
   },
   "PlayerLoggedIn": {
     "session_id": "string",
-    "account_id": "string",
+    "request_session_id": "string",
     "when": "datetime2"
+  },
+  "PlayerLoggedOut": {
+    "session_id": "string",
+    "when": "datetime2"
+  },
+  "PlayerJoinIn": {
+    "session_id": "string",
+    "nickname": "string",
+    "when": "datetime2"
+  },
+  "PlayerClearDungeon": {
+    "session_id": "string",
+    "dungeon_name": "string",
+    "when": "datetime2"
+  },
+  "PlayerDeleteDeck": {
+    "session_id": "string",
+    "deck_idx": "string"
+  },
+  "PlayerSaveDeck": {
+    "session_id": "string",
+    "deck_idx": "string",
+    "deck_name": "string",
+    "deck_char": "string",
+    "deck_cards": "string"
+  },
+  "PlayerBuyGoods": {
+    "session_id": "string",
+    "goods_id": "string"
   }
 }

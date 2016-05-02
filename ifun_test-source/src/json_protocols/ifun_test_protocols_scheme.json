@@ -1,0 +1,169 @@
+{
+    "join":{
+        "direction":"cs",
+        "properties":{
+            "NickName":{
+                "type":"string",
+                "required":"cs"
+            }
+        }
+    },
+    "logout":{
+        "direction":"cs",
+        "properties":{
+            "Reason":{
+                "type":"string",
+                "required":"cs"
+            }
+        }
+    },
+    "login":{
+        "direction":"cs",
+        "properties": {
+            "Id": {
+                "type":"string",
+                "required":"cs"
+            }
+        }
+    },
+    "delete_deck":{
+        "direction":"cs",
+        "properties": {
+            "DeckIdx":{
+                "type": "string",
+                "required":"cs"
+            }
+        }
+    },
+    "clear_dungeon":{
+        "direction":"cs",
+        "properties":{
+            "DungeonName":{
+                "type":"string",
+                "required":"cs"
+            }
+        }
+    },
+    "buy_goods":{
+        "direction":"cs",
+        "properties":{
+            "GoodsId":{
+                "type":"string",
+                "required":"cs"
+            }
+        }
+    },
+    "save_deck":{
+        "direction":"cs",
+        "properties":{
+            "DeckInfo":{
+                "type":"object",
+                "properties": {
+                    "DeckIdx":{
+                        "type": "string"
+                    },
+                    "DeckName":{
+                        "type": "string"
+                    },
+                    "DeckCharacter":{
+                        "type": "string"
+                    },
+                    "DeckCard":{
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "result":{
+        "direction":"sc",
+        "properties":{
+            "Result": {
+                "type":"string",
+                "required":"sc"
+            },
+            "Reason": {
+                "type":"string",
+                "required":"sc"
+            },
+            "UpdateInfo":{
+                "type":"object",
+                "properties": {
+                    "Dice": {
+                        "type":"string"
+                    },
+                    "Gem": {
+                        "type":"string"
+                    },
+                    "Gold": {
+                        "type":"string"
+                    },
+                    "ManaShard": {
+                        "type":"string"
+                    },
+                    "BoosterPack": {
+                        "type":"string"
+                    },
+                    "Characters": {
+                        "type":"string"
+                    },
+                    "Cards": {
+                        "type":"string"
+                    }
+                }
+            },
+            "UserInfo":{
+                "type":"object",
+                "properties": {
+                    "Id": {
+                        "type": "string"
+                    },
+                    "NickName": {
+                        "type":"string"
+                    },
+                    "Dice": {
+                        "type":"string"
+                    },
+                    "Gem": {
+                        "type":"string"
+                    },
+                    "Gold": {
+                        "type":"string"
+                    },
+                    "ManaShard": {
+                        "type":"string"
+                    },
+                    "BoosterPack": {
+                        "type":"string"
+                    },
+                    "ClearStages": {
+                        "type":"string"
+                    },
+                    "Characters": {
+                        "type":"string"
+                    },
+                    "Cards": {
+                        "type":"string"
+                    },
+                    "Decks": {
+                        "type":"array",
+                        "items":{
+                            "type":"object",
+                            "properties":{
+                                "DeckName":{
+                                    "type":"string"
+                                },
+                                "DeckCharacter":{
+                                    "type":"string"
+                                },
+                                "DeckCard":{
+                                    "type":"string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

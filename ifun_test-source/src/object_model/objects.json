@@ -1,0 +1,32 @@
+{
+   "User":{
+      "NickName":"String KEY",
+      "Gem":"Integer",
+      "Gold":"Integer",
+      "Dice":"Integer",
+      "ManaShard":"Integer",
+      "BoosterPack":"Integer",
+      "ClearStages":"Stage",
+      "HaveCharacters":"Character",
+      "HaveCards":"Card",
+      "HaveDecks":"Deck[]"
+    },
+   "Stage":{
+      "List":"String"
+   },
+   "Character": {
+      "List":"String"
+   },
+   "Card":{
+      "List":"String"
+   },
+   "Deck":{
+      "Name":"String",
+      "Hero":"String",
+      "CardList":"String"
+   },
+   "SessionUserInfo": {
+      "SessionId":"String KEY",
+      "UserInfo":"User"
+   }
+}

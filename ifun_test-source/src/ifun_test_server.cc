@@ -56,7 +56,8 @@ class IfunTestServer : public Component {
      * You may be interesed in this function and handlers in it.
      * Please see "event_handlers.cc"
      */
-    ifun_test::RegisterEventHandlers();
+
+      ifun_test::RegisterEventHandlers();
 
     return true;
   }

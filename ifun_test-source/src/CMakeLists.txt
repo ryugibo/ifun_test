@@ -9,8 +9,11 @@
 set(
   ADDITIONAL_CPP_SOURCES
   event_handlers.cc
-  event_handlers.h
   ${PROJECT_NAME}_server.cc
+  ifun_test_json_adder.cc
+  ifun_test_game_data_objects.cc
+  ifun_test_game_data_accessor.cc
+  ifun_test_exception.cc
 )
 
 set(

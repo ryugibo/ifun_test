@@ -13,8 +13,10 @@
 
 namespace ifun_test {
 
-void RegisterEventHandlers();
+	void RegisterEventHandlers();
 
+	void RegisterCommonEventHanders();
+	void RegisterCommonRpcHandlers();
 }  // namespace ifun_test
 
 #endif  // SRC_EVENT_HANDLERS_H_
